@@ -24,7 +24,7 @@
     "@dcl/ui-scene-utils": "^1.8.4",
     "@types/cannon": "^0.1.4",
     "cannon": "github:schteppe/cannon.js",
-    "decentraland": "^3.10.1",
+    "decentraland": "^3.14.2",
     "decentraland-transactions": "^1.25.0",
     "dg-world-marketplace-sdk": "^1.0.17",
     "eth-connect": "^6.0.3"
