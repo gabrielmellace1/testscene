@@ -166,7 +166,7 @@ const opts: MarketplaceOptions = {
   previewEnv: "prod" as any,
   network: "MATIC" as any,
   engine,
-  zoneId: 39,
+  zoneId: 32,
   // Notice that DCL doesn't support more than one canvas, so if you want to use your canvas, you need to set it here.
   // if you don't set it, the sdk will create a new canvas for you :). The canvas will  be exposed by the SDK eg: dgMarketplace.canvas
   // canvas: youCanvasInstanceHere
@@ -197,3 +197,15 @@ const opts: MarketplaceOptions = {
 };
 
 const dgMarketplace = new DgWorldMarketplace(opts);
+
+
+
+const streamSource = new Entity()
+streamSource.addComponent(
+  new AudioStream(
+    "https://ipfs.io/ipfs/QmNYCWYbBsZdGhngP64BTYcsV8WmYpn3rnt3oUVQPxps86"
+  )
+)
+engine.addEntity(streamSource)
+
+streamSource.getComponent(AudioStream).playing = true

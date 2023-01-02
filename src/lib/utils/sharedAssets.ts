@@ -103,7 +103,7 @@ let fallbackVideoTexture = new VideoTexture(fallbackVideoClip);
 // })
 
 export async function fetchStreamingURL(zone: number){
-  let dgResponse = await fetch('https://business.dglive.org/api/getZone/' + zone)
+  let dgResponse = await fetch('https://business.dglive.org/api/getZone/' +   zone)
   let json = await dgResponse.json()
   let response = await fetchMedia("https://api.theta.tv/v1/channel?alias=" + json['banners'][0].name)
   //let response = await fetchMedia("https://api.theta.tv/v1/channel?alias=dglive")

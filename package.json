@@ -26,7 +26,7 @@
     "cannon": "github:schteppe/cannon.js",
     "decentraland": "^3.14.2",
     "decentraland-transactions": "^1.25.0",
-    "dg-world-marketplace-sdk": "^1.0.17",
+    "dg-world-marketplace-sdk": "^1.0.20",
     "eth-connect": "^6.0.3"
   },
   "bundledDependencies": [
